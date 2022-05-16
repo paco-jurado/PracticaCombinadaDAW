@@ -5,9 +5,15 @@ import java.util.Scanner;
  */
 public class GestionClientes {
 
-  
-    static Scanner in = null;
-    
+      /**
+       * Atributo de clase que permite acceder a la entrada de teclado
+       */
+      static Scanner in = null;
+   /**
+    * Permite pasarle por linea de comando el driver, el servidor, la BBDD a utilizar,...
+    * Por defecto, si no se le indica NADA ... será el SGBDR MySQL y la BBDD tienda  
+    * @param args
+    */
     public  static void main(String[] args) {
 
       if(args.length == 0)
