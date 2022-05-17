@@ -2,6 +2,7 @@ import java.util.Scanner;
 /**
  *
  * @author FJJJ
+ * Version instalada en SMR2 de prueba
  */
 public class GestionClientes {
 
