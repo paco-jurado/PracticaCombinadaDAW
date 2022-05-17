@@ -1,9 +1,15 @@
-import java.util.Scanner;
+package AppBBDD;
+
 /**
  *
  * @author FJJJ
  * Version instalada en SMR2 de prueba
  */
+
+import GestionBD.DBManager;
+import java.util.Scanner;
+
+
 public class GestionClientes {
 
       /**
