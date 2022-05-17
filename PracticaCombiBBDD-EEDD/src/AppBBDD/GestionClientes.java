@@ -49,16 +49,23 @@ public class GestionClientes {
         
         System.out.println("");
         System.out.println("MENU PRINCIPAL");
-        System.out.println("1. Listar clientes");
-        System.out.println("2. Nuevo cliente");
+        System.out.println("0. Salir");
+        System.out.println("1. Listar clientes");			// Modificar para Listar cualquier tabla
+        System.out.println("2. Nuevo cliente");				// Modificar para añadir a cualquier tabla
         System.out.println("3. Modificar cliente");
         System.out.println("4. Eliminar cliente");
-        System.out.println("5. Salir");
+        System.out.println("5. Crear Tabla");				// Crea una nueva tabla. Pendiente especificar formato fichero 
+        System.out.println("6. Volcar a Fichero");			// Volcará a fichero indicado
+        System.out.println("7. Cambiar Base de Datos");		// Permite cambiar de BBDD
+        System.out.println("8. Mostrar Tablas Existentes"); // Mostrará CADA Tabla de la BBDD y sus Campos
+        
      
         int opcion = pideInt("Elige una opción: ");
         
         switch (opcion) {
-            case 1:
+        	case 0:
+        		return true;
+        	case 1:
                 opcionMostrarClientes();
                 return false;
             case 2:
@@ -71,7 +78,14 @@ public class GestionClientes {
                 opcionEliminarCliente();
                 return false;
             case 5:
-                return true;
+                opcionCrearTabla();
+                return false;
+            case 6:
+                 opcionVolcarEnFichro();
+                 return false;
+            case 7:
+                opcionCambiarBBDD();
+                return false;
             default:
                 System.out.println("Opción elegida incorrecta");
                 return false;
@@ -79,7 +93,22 @@ public class GestionClientes {
         
     }
     
-    static int pideInt(String mensaje){
+    private static void opcionCambiarBBDD() {
+		// TODO Auto-generated method stub
+    	System.out.println("\n************** Por hacer!!");
+	}
+
+	private static void opcionVolcarEnFichro() {
+		// TODO Auto-generated method stub
+		System.out.println("\n************** Por hacer!!");
+	}
+
+	private static void opcionCrearTabla() {
+		// TODO Auto-generated method stub
+		System.out.println("\n************** Por hacer!!");
+	}
+
+	static int pideInt(String mensaje){
         int valor;
         while(true) {
             try {

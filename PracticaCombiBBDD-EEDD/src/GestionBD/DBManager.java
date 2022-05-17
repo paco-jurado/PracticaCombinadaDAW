@@ -23,7 +23,7 @@ public class DBManager {
     public static String DB_propiedades = "?serverTimezone=UTC";
         
     private static final String DB_USER = "root";
-    private static final String DB_PASS = "Laleche41$";
+    private static final String DB_PASS = "29701349";
     private static String DB_name = "Tienda";
                                                                  // Configuración de la tabla Clientes
     private static String DB_Tabla = "clientes";
